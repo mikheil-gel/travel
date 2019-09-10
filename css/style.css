@@ -1,0 +1,179 @@
+html,body{
+    width: 100%;
+}
+body{
+    background: url("../img/background.jpg") top center no-repeat black;
+    
+}
+
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+.flex{	
+	display: flex;
+	justify-content: space-around;
+
+}
+.align{
+	align-items: center;	
+}
+.direction{
+	/*align-content: space-between;*/
+	display: flex;
+	flex-direction: column;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.top{
+	height: 50px;
+	/*background-color: white;*/
+	/*opacity: 1;*/
+	/*animation: start 5s;*/
+}
+.top a{
+	height: 100%;
+	padding:5px;
+	/*font-family: "ArchyEDT-Bold", sans-serif;*/
+	font-size: 20px;
+	color: rgb(45,81,163);
+	border-radius: 10%;
+}
+.top nav a:hover{
+	background-color: rgb(45,81,163);
+	color: white;
+}
+.logo{
+	height: 100%;
+	padding: 5%;
+}
+.logo:hover{
+	padding: 0;
+}
+.wrap{
+	flex-wrap: wrap;	
+}
+nav ul{
+	width: 50%;
+}
+
+nav ul li{
+	margin-right: 30%;
+}
+.lang{
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	border-radius: 10%;
+}
+.drop-lan{
+	display: none;
+	position: absolute;
+	background-color: white;
+	border-radius: 10%;
+}
+.lang:hover .drop-lan{
+	display: block;
+}
+
+.drop{
+	display: none;
+	position: absolute;
+	min-width: 20px;
+}
+.drop a{
+	font-size: 16px;
+	padding: 0px;
+}
+.add{
+	height: 260px;
+}
+.add h1{
+	color: #ff005c;
+	font-size: 30px;
+}
+h2{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom:  20px;
+	color: blue;
+}
+#tr{
+	margin-top: 240px;
+}
+.main{
+	margin-bottom: 100px;
+}
+.tour{
+	padding: 5px;
+	/*border: 2px solid rgb(45,81,163);*/
+	background-color: rgb(178,192,231);
+	border-radius: 8px;
+	width: 250px;
+}
+.tour img{
+	width: 100%;
+}	
+.tour p{
+	color: blue;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.tour:hover{
+	background-color: white;
+	border: 2px solid blue;
+	padding:2px;
+}
+#info{
+	
+	/*background-color: rgb(113,128,69);*/
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.contact-info{
+	height: 100%;
+	border-radius: 10px;
+	background-color: white;
+}
+.contact-info p{
+	color: blue;
+	font-weight: bold;
+	margin: 10px 5px;
+
+}
+iframe{
+	width: 600px;
+	height: 450px;
+	border: 0;
+}
+span{
+	color: black;
+	font-weight: bold;
+}
+footer{
+	margin-top: 70px;
+	background-color: black;
+}
+/*.bottom{
+	padding: : 20px 0;
+}*/
+.fab{
+
+	margin: 15px 5px;
+	color: white;
+}
+.fab:hover{
+	color: blue;
+}
+.ft-ul{
+	display: flex;
+}
+
+/*@keyframes start{
+	 from{opacity:0;}
+	 to{opacity:1;}
+}*/
+
