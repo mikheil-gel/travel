@@ -10,29 +10,40 @@ body{
 	margin: 0 auto;
 }
 .flex{	
+	display: -webkit-box;	
+	display: -ms-flexbox;	
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .center{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .align{
-	align-items: center;	
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
 }
 .direction{
-	/*align-content: space-between;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .wrap{
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .top{
 	height: 50px;
-	/*background-color: white;*/
-	/*opacity: 1;*/
-	/*animation: start 5s;*/
 }
 .top a{
 	height: 100%;
@@ -170,9 +181,6 @@ h2{
 	padding: 10px;
 	margin-top:400px;
 }
-/*#reg h2, #info h2{
-	color: white;
-}*/
 .contact-info{
 	height: 100%;
 	border-radius: 10px;
@@ -246,11 +254,17 @@ footer{
 	background-color: black;
 }
 .bottom{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .bottom p{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	color: white;
 }
 .fab{
@@ -262,13 +276,11 @@ footer{
 	color: blue;
 }
 .ft-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
-/*@keyframes start{
-	 from{opacity:0;}
-	 to{opacity:1;}
-}*/
 .slide{
 	padding: 5px;
 	text-align: center;
@@ -276,7 +288,19 @@ footer{
 	width: 888px;
 	height:500px;
 	background: url("../img/tbilisi.jpg") center;
-	animation: sl 40s infinite;
+	-webkit-animation: sl 40s infinite;
+	        animation: sl 40s infinite;
+}
+
+@-webkit-keyframes sl{
+	0%{background: url("../img/tbilisi.jpg") center;}
+	24%{background: url("../img/tbilisi.jpg") center;}
+	25%{background: url("../img/mtskheta.jpg") center;}
+	49%{background: url("../img/mtskheta.jpg") center;}
+	50%{background: url("../img/gergeti.jpg") center;}
+	74%{background: url("../img/gergeti.jpg") center;}
+	75%{background: url("../img/mestia.jpg") center;}
+	100%{background: url("../img/mestia.jpg") center;}
 }
 
 @keyframes sl{
