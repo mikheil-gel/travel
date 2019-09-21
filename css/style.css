@@ -2,10 +2,8 @@ html,body{
     width: 100%;
 }
 body{
-    background: url("../img/background.jpg") top center no-repeat black;
-    
+    background: url("../img/background.jpg") repeat-y; 
 }
-
 .container{
 	max-width: 1140px;
 	width: 100%;
@@ -14,7 +12,10 @@ body{
 .flex{	
 	display: flex;
 	justify-content: space-around;
-
+}
+.center{
+	display: flex;
+	justify-content: center;
 }
 .align{
 	align-items: center;	
@@ -38,11 +39,14 @@ body{
 	padding:5px;
 	/*font-family: "ArchyEDT-Bold", sans-serif;*/
 	font-size: 20px;
-	color: rgb(45,81,163);
+	color: #3051A3;
 	border-radius: 10%;
 }
-.top nav a:hover{
-	background-color: rgb(45,81,163);
+.log{
+	margin-right: 10px;
+}
+.top nav a:hover, .log:hover{
+	background-color: #3051A3;
 	color: white;
 }
 .logo{
@@ -52,15 +56,14 @@ body{
 .logo:hover{
 	padding: 0;
 }
-.wrap{
-	flex-wrap: wrap;	
-}
-nav ul{
+.top nav ul{
 	width: 50%;
 }
-
-nav ul li{
+.top nav ul li{
 	margin-right: 30%;
+}
+.top nav ul li:last-child{
+	display: none;
 }
 .lang{
 	position: relative;
@@ -77,22 +80,20 @@ nav ul li{
 .lang:hover .drop-lan{
 	display: block;
 }
-
-.drop{
-	display: none;
-	position: absolute;
-	min-width: 20px;
-}
-.drop a{
-	font-size: 16px;
-	padding: 0px;
+.top .check{
+	background-color: #3051A3;
+	color: white;
 }
 .add{
-	height: 260px;
+	margin-top: 30px;
 }
 .add h1{
-	color: #ff005c;
+	color: white;
+	font-weight: bold;
 	font-size: 30px;
+    background-color: #96B5F5;
+    border-radius: 17px 17px 5px 5px;
+    padding: 3px 0px;
 }
 h2{
 	text-align: center;
@@ -100,20 +101,27 @@ h2{
 	margin-bottom:  20px;
 	color: blue;
 }
-#tr{
-	margin-top: 240px;
+.tr{
+	margin-top: 150px;
 }
 .main{
 	margin-bottom: 100px;
 }
+.tr-h{
+	padding: 1px;
+	border-radius: 2px;
+	background-color: white;
+}
 .tour{
 	padding: 5px;
-	/*border: 2px solid rgb(45,81,163);*/
-	background-color: rgb(178,192,231);
+	margin: 10px;
+	background-color: #B2C0E7;
 	border-radius: 8px;
-	width: 250px;
+	max-width: 250px;
+	width: 100%;
 }
 .tour img{
+	border-radius: 5px;
 	width: 100%;
 }	
 .tour p{
@@ -126,43 +134,128 @@ h2{
 	border: 2px solid blue;
 	padding:2px;
 }
-#info{
+.tour-t{
+	padding: 5px;
+	margin: 10px;
+	background-color: #B2C0E7;
+	border-radius: 8px;
+	width: 80%;
+}
+
+.tour-t img{
+	border-radius: 8px;
+	width: 100%;
+}
 	
-	/*background-color: rgb(113,128,69);*/
-	background-color: white;
+.tour-t .tour-info p{
+	color: blue;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+.head-p{
+	margin:10px 0px;
+	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+}
+#reg{
+	margin-top: 80px;
+	padding-top: 40px;
+}
+#info{	
+	background-color: #96B5F5;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top:400px;
 }
+/*#reg h2, #info h2{
+	color: white;
+}*/
 .contact-info{
 	height: 100%;
 	border-radius: 10px;
-	background-color: white;
-}
-.contact-info p{
-	color: blue;
-	font-weight: bold;
-	margin: 10px 5px;
-
+	background-color: #B2C0E7;
 }
 iframe{
-	width: 600px;
-	height: 450px;
+	max-width: 500px;
+	width: 100%;
+	height: 400px;
 	border: 0;
+	border-radius: 10px;
 }
-span{
-	color: black;
+.tour-t span{
+	color: white;
+}
+.tour span, {
+	color: grey;
 	font-weight: bold;
+	margin-left: 6px;
+}
+.buy{
+	color: white;
+	background-color: blue;
+	font-size: 20px;
+	border:none;
+	margin: 10px 6px;
+	padding: 1px;
+	border-radius: 4px;
+	width: 15%;
+}
+.buy:hover{
+	color: yellow;
+	padding:0;
+	border:1px solid white;
+}
+form{
+	max-width: 500px;
+	width: 100%;
+	background-color: #6C7B98;
+	border-radius: 10px;
+	padding: 10px;
+}
+.fr{
+	margin:10px 0 ;
+}
+label{
+	color: white;
+
+}
+input[type=text],[type=password]{
+	width: 48%;
+	border-radius: 7px;
+
+}
+input[type=tel],[type=email]{
+	width: 100%;
+	border-radius: 7px;
+}
+input[type=submit]{
+	width: 75%;
+	border-radius: 7px;
+	color: white;
+	background-color: #96B5F5;
+	border: none;
+}
+input[type=submit]:hover{
+	background-color: blue;
 }
 footer{
 	margin-top: 70px;
 	background-color: black;
 }
-/*.bottom{
-	padding: : 20px 0;
-}*/
+.bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.bottom p{
+	align-self: center;
+	color: white;
+}
 .fab{
 
-	margin: 15px 5px;
+	margin: 15px;
 	color: white;
 }
 .fab:hover{
@@ -176,4 +269,50 @@ footer{
 	 from{opacity:0;}
 	 to{opacity:1;}
 }*/
+.slide{
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px;
+	width: 888px;
+	height:500px;
+	background: url("../img/tbilisi.jpg") center;
+	animation: sl 40s infinite;
+}
 
+@keyframes sl{
+	0%{background: url("../img/tbilisi.jpg") center;}
+	24%{background: url("../img/tbilisi.jpg") center;}
+	25%{background: url("../img/mtskheta.jpg") center;}
+	49%{background: url("../img/mtskheta.jpg") center;}
+	50%{background: url("../img/gergeti.jpg") center;}
+	74%{background: url("../img/gergeti.jpg") center;}
+	75%{background: url("../img/mestia.jpg") center;}
+	100%{background: url("../img/mestia.jpg") center;}
+}
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 768px){
+
+}
+@media (max-width: 480px){
+	#info{
+		margin-top: 250px;
+	}
+}
+@media (max-width: 800px){
+.top nav ul li:first-child{
+	display: none;
+
+	}
+}
+@media (max-width: 600px){
+.top nav ul li:nth-child(n){
+	display: none;
+
+	}
+.top nav ul li:last-child{
+	display: block;
+}	
+}
